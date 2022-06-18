@@ -1,0 +1,10 @@
+E:\cpp\project\Travel\Debug\Travel.vcxproj.AssemblyReference.cache
+E:\cpp\project\Travel\Debug\Travel.vcxproj.SuggestedBindingRedirects.cache
+E:\cpp\project\Travel\Debug\Travel.MyForm.resources
+E:\cpp\project\Travel\Debug\Travel.vcxproj.GenerateResource.cache
+E:\cpp\project\Travel\Debug\Travel.exe
+E:\cpp\project\Travel\Debug\Travel.HomePage.resources
+E:\cpp\project\Travel\Debug\Travel.Pay.resources
+E:\cpp\project\Travel\Debug\Travel.Pkg.resources
+E:\cpp\project\Travel\Debug\Travel.profile.resources
+E:\cpp\project\Travel\Debug\Travel.userProfile.resources

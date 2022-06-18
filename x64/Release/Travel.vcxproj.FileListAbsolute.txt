@@ -1,0 +1,5 @@
+E:\cpp\project\Travel\x64\Release\Travel.vcxproj.AssemblyReference.cache
+E:\cpp\project\Travel\x64\Release\Travel.vcxproj.SuggestedBindingRedirects.cache
+E:\cpp\project\Travel\x64\Release\Travel.MyForm.resources
+E:\cpp\project\Travel\x64\Release\Travel.vcxproj.GenerateResource.cache
+E:\cpp\project\Travel\x64\Release\Travel.exe
