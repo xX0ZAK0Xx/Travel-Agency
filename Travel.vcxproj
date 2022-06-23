@@ -130,17 +130,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Desert.cpp" />
+    <ClCompile Include="Forest.cpp" />
     <ClCompile Include="HomePage.cpp" />
+    <ClCompile Include="Island.cpp" />
+    <ClCompile Include="Mountains.cpp" />
     <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="profile.cpp" />
     <ClCompile Include="Pay.cpp" />
     <ClCompile Include="Pkg.cpp" />
+    <ClCompile Include="SeaBeach.cpp" />
+    <ClCompile Include="SkyDiving.cpp" />
+    <ClCompile Include="SnowFall.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Summer.cpp" />
     <ClCompile Include="user.cpp" />
     <ClCompile Include="userProfile.cpp" />
+    <ClCompile Include="Winter.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Desert.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Forest.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="HomePage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Island.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Mountains.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="profile.h">
@@ -156,14 +177,41 @@
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="SeaBeach.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SkyDiving.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SnowFall.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Summer.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="userData.h" />
     <ClInclude Include="userProfile.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Winter.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Desert.resx">
+      <DependentUpon>Desert.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forest.resx">
+      <DependentUpon>Forest.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Island.resx">
+      <DependentUpon>Island.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mountains.resx">
+      <DependentUpon>Mountains.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
@@ -177,8 +225,23 @@
     <EmbeddedResource Include="profile.resx">
       <DependentUpon>profile.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SeaBeach.resx">
+      <DependentUpon>SeaBeach.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkyDiving.resx">
+      <DependentUpon>SkyDiving.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnowFall.resx">
+      <DependentUpon>SnowFall.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Summer.resx">
+      <DependentUpon>Summer.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userProfile.resx">
       <DependentUpon>userProfile.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Winter.resx">
+      <DependentUpon>Winter.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

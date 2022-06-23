@@ -8,3 +8,12 @@ E:\cpp\project\Travel\Debug\Travel.Pay.resources
 E:\cpp\project\Travel\Debug\Travel.Pkg.resources
 E:\cpp\project\Travel\Debug\Travel.profile.resources
 E:\cpp\project\Travel\Debug\Travel.userProfile.resources
+E:\cpp\project\Travel\Debug\Travel.Desert.resources
+E:\cpp\project\Travel\Debug\Travel.Forest.resources
+E:\cpp\project\Travel\Debug\Travel.Island.resources
+E:\cpp\project\Travel\Debug\Travel.Mountains.resources
+E:\cpp\project\Travel\Debug\Travel.SeaBeach.resources
+E:\cpp\project\Travel\Debug\Travel.SkyDiving.resources
+E:\cpp\project\Travel\Debug\Travel.SnowFall.resources
+E:\cpp\project\Travel\Debug\Travel.Summer.resources
+E:\cpp\project\Travel\Debug\Travel.Winter.resources

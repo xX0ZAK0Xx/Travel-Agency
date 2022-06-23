@@ -2,6 +2,7 @@
   MyForm.cpp
 E:\cpp\project\Travel\MyForm.h(726,19): warning C4018: '<': signed/unsigned mismatch
 E:\cpp\project\Travel\MyForm.h(812,21): warning C4018: '<': signed/unsigned mismatch
+  profile.cpp
   Generating Code...
-  HomePage.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Desert.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   Travel.vcxproj -> E:\cpp\project\Travel\Debug\Travel.exe

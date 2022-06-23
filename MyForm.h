@@ -612,12 +612,12 @@ namespace Travel {
 				static_cast<System::Byte>(177)));
 			this->ForeColor = System::Drawing::Color::White;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Margin = System::Windows::Forms::Padding(4, 3, 4, 3);
 			this->MaximizeBox = false;
 			this->MinimizeBox = false;
 			this->Name = L"MyForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-			this->Text = L"SignIn";
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
 			this->panel9->ResumeLayout(false);

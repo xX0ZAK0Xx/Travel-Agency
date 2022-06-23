@@ -1,9 +1,18 @@
+  Travel.Desert.resources - Embedded, ContainedInManifestFile, 
+  Travel.Forest.resources - Embedded, ContainedInManifestFile, 
   Travel.HomePage.resources - Embedded, ContainedInManifestFile, 
+  Travel.Island.resources - Embedded, ContainedInManifestFile, 
+  Travel.Mountains.resources - Embedded, ContainedInManifestFile, 
   Travel.MyForm.resources - Embedded, ContainedInManifestFile, 
   Travel.Pay.resources - Embedded, ContainedInManifestFile, 
   Travel.Pkg.resources - Embedded, ContainedInManifestFile, 
   Travel.profile.resources - Embedded, ContainedInManifestFile, 
+  Travel.SeaBeach.resources - Embedded, ContainedInManifestFile, 
+  Travel.SkyDiving.resources - Embedded, ContainedInManifestFile, 
+  Travel.SnowFall.resources - Embedded, ContainedInManifestFile, 
+  Travel.Summer.resources - Embedded, ContainedInManifestFile, 
   Travel.userProfile.resources - Embedded, ContainedInManifestFile, 
+  Travel.Winter.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly Travel, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
 	hash=SHA1, flags=PublicKey
@@ -24,11 +33,43 @@ Class Travel.Pay: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(System.String, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
     Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    isLeap(Int32): PrivateScope, Public, HideBySig
+    offsetDays(Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    revoffsetDays(Int32, Int32, Int32*, Int32*): PrivateScope, Public, HideBySig
+    addDays(Int32, Int32, Int32, Int32, Int32* IsConst IsConst): PrivateScope, Public, HideBySig
 Class Travel.Pkg: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(System.String, System.String, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Travel.Desert: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Travel.Forest: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Travel.profile: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Travel.Mountains: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Travel.Island: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Travel.SeaBeach: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Travel.SkyDiving: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Travel.SnowFall: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Travel.Summer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Travel.Winter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Travel.HomePage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
