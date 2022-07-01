@@ -23,6 +23,10 @@ namespace Travel {
 	public:
 	private: System::Windows::Forms::Label^ destination;
 	private: System::Windows::Forms::Label^ classs;
+	private: System::Windows::Forms::Panel^ sure;
+	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::Button^ Y;
+	private: System::Windows::Forms::Button^ N;
 	private: System::Windows::Forms::Label^ datee;
 	public:
 		Pay(void)
@@ -95,7 +99,12 @@ namespace Travel {
 			this->destination = (gcnew System::Windows::Forms::Label());
 			this->classs = (gcnew System::Windows::Forms::Label());
 			this->datee = (gcnew System::Windows::Forms::Label());
+			this->sure = (gcnew System::Windows::Forms::Panel());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->Y = (gcnew System::Windows::Forms::Button());
+			this->N = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox38))->BeginInit();
+			this->sure->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// button8
@@ -203,11 +212,61 @@ namespace Travel {
 			this->datee->Text = L"Amount :";
 			this->datee->Visible = false;
 			// 
+			// sure
+			// 
+			this->sure->BackColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->sure->Controls->Add(this->label3);
+			this->sure->Controls->Add(this->Y);
+			this->sure->Controls->Add(this->N);
+			this->sure->Location = System::Drawing::Point(89, 133);
+			this->sure->Name = L"sure";
+			this->sure->Size = System::Drawing::Size(282, 171);
+			this->sure->TabIndex = 9;
+			this->sure->Visible = false;
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Aharoni", 20, System::Drawing::FontStyle::Bold));
+			this->label3->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->label3->Location = System::Drawing::Point(25, 33);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(245, 34);
+			this->label3->TabIndex = 2;
+			this->label3->Text = L"Are you sure \?";
+			// 
+			// Y
+			// 
+			this->Y->BackColor = System::Drawing::SystemColors::InactiveCaption;
+			this->Y->FlatAppearance->BorderSize = 0;
+			this->Y->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->Y->Location = System::Drawing::Point(31, 106);
+			this->Y->Name = L"Y";
+			this->Y->Size = System::Drawing::Size(91, 44);
+			this->Y->TabIndex = 1;
+			this->Y->Text = L"YES";
+			this->Y->UseVisualStyleBackColor = false;
+			this->Y->Click += gcnew System::EventHandler(this, &Pay::Y_Click);
+			// 
+			// N
+			// 
+			this->N->BackColor = System::Drawing::Color::Bisque;
+			this->N->FlatAppearance->BorderSize = 0;
+			this->N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->N->Location = System::Drawing::Point(162, 106);
+			this->N->Name = L"N";
+			this->N->Size = System::Drawing::Size(91, 44);
+			this->N->TabIndex = 0;
+			this->N->Text = L"NO";
+			this->N->UseVisualStyleBackColor = false;
+			this->N->Click += gcnew System::EventHandler(this, &Pay::N_Click);
+			// 
 			// Pay
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(460, 410);
+			this->Controls->Add(this->sure);
 			this->Controls->Add(this->datee);
 			this->Controls->Add(this->classs);
 			this->Controls->Add(this->destination);
@@ -225,6 +284,8 @@ namespace Travel {
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Pay";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox38))->EndInit();
+			this->sure->ResumeLayout(false);
+			this->sure->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -399,8 +460,7 @@ private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e
 				"Start : "<< date << "  End : "<<arr[1]<<"/"<<arr[0]<<"/"<<arr[2]<< endl;
 		}
 		tck.close();
-
-		MessageBox::Show("Payment Successfull");
+		sure->Visible = true;
 	}
 	else {
 		MessageBox::Show("Invalid Card");
@@ -408,6 +468,13 @@ private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e
 }
 private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
 	Close();
+}
+private: System::Void Y_Click(System::Object^ sender, System::EventArgs^ e) {
+	sure->Visible = false;
+	MessageBox::Show("Payment Successfull");
+}
+private: System::Void N_Click(System::Object^ sender, System::EventArgs^ e) {
+	sure->Visible = false;
 }
 };
 }

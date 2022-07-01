@@ -18,10 +18,10 @@ namespace Travel {
 	/// <summary>
 	/// Summary for MyForm1
 	/// </summary>
-	public ref class profile : public System::Windows::Forms::Form
+	public ref class userProfile : public System::Windows::Forms::Form
 	{
 	public:
-		profile(void)
+		userProfile(void)
 		{
 			InitializeComponent();
 			//
@@ -60,7 +60,7 @@ namespace Travel {
 		/// <summary>
 		/// Clean up any resources being used.
 		/// </summary>
-		~profile()
+		~userProfile()
 		{
 			if (components)
 			{
@@ -92,7 +92,7 @@ namespace Travel {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(profile::typeid));
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(userProfile::typeid));
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->pass = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
@@ -215,6 +215,7 @@ namespace Travel {
 			// 
 			// tickets
 			// 
+			this->tickets->AutoSize = true;
 			this->tickets->BackColor = System::Drawing::Color::Transparent;
 			this->tickets->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->tickets->Font = (gcnew System::Drawing::Font(L"Segoe UI Light", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
@@ -223,15 +224,16 @@ namespace Travel {
 				static_cast<System::Int32>(static_cast<System::Byte>(92)));
 			this->tickets->Location = System::Drawing::Point(383, 0);
 			this->tickets->Name = L"tickets";
-			this->tickets->Size = System::Drawing::Size(502, 673);
+			this->tickets->Size = System::Drawing::Size(136, 28);
 			this->tickets->TabIndex = 19;
 			this->tickets->Text = L"show all tickets";
 			this->tickets->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// profile
+			// userProfile
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->AutoScroll = true;
 			this->ClientSize = System::Drawing::Size(885, 673);
 			this->Controls->Add(this->tickets);
 			this->Controls->Add(this->panel1);
@@ -239,12 +241,13 @@ namespace Travel {
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->MaximizeBox = false;
 			this->MinimizeBox = false;
-			this->Name = L"profile";
+			this->Name = L"userProfile";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Profile";
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
